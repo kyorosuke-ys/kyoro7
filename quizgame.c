@@ -38,7 +38,7 @@ int main (void)
     srand ( (unsigned)time(NULL) );
     a = rand () % 5;
     //問題を表示
-    printf ("問題：%s(漢字で答えよ)\n" ,variation[a].question);
+    printf ( "問題：%s(漢字で答えよ)\n" ,variation[a].question);
     //入力
     fgets(useranswer,sizeof(useranswer),stdin);
     useranswer[strcspn(useranswer, "\n")] = 0;
